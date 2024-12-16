@@ -1,6 +1,7 @@
 import React from "react";
 import { Leaf } from "lucide-react";
 import Button from "./ui/Button";
+import bgImage from "../assets/bg.svg";
 
 export default function Hero() {
   return (
@@ -21,11 +22,7 @@ export default function Hero() {
             </Button>
           </div>
           <div className="md:w-1/2">
-            <img
-                src="/assets/bg.svg"
-              alt="Rice Field"
-              className="rounded-lg shadow-xl"
-            />
+          <img src={bgImage} alt="Rice Field Background" />;
           </div>
         </div>
       </div>

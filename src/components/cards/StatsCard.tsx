@@ -20,7 +20,7 @@ export function StatsCard() {
     },
     {
       icon: Clock, // Ikon tambahan
-      value: "2 detik",
+      value: "2 Detik",
       label: "Waktu Diagnosa", // Statistik baru
     },
   ];
