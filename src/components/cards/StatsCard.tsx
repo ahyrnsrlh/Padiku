@@ -1,23 +1,28 @@
-import React from 'react';
-import { Users, Leaf, CheckCircle } from 'lucide-react';
+import React from "react";
+import { Users, Leaf, CheckCircle, Clock } from "lucide-react";
 
 export function StatsCard() {
   const stats = [
     {
       icon: Users,
-      value: '1,000+',
-      label: 'Pengguna Aktif'
+      value: "1,000+",
+      label: "Pengguna Aktif",
     },
     {
       icon: Leaf,
-      value: '4',
-      label: 'Jenis Penyakit'
+      value: "10",
+      label: "Jenis Penyakit",
     },
     {
       icon: CheckCircle,
-      value: '95%',
-      label: 'Akurasi'
-    }
+      value: "95%",
+      label: "Akurasi",
+    },
+    {
+      icon: Clock, // Ikon tambahan
+      value: "2 detik",
+      label: "Waktu Diagnosa", // Statistik baru
+    },
   ];
 
   return (

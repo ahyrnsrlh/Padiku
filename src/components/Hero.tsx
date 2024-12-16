@@ -1,6 +1,6 @@
-import React from 'react';
-import { Leaf } from 'lucide-react';
-import Button from './ui/Button';
+import React from "react";
+import { Leaf } from "lucide-react";
+import Button from "./ui/Button";
 
 export default function Hero() {
   return (
@@ -12,19 +12,17 @@ export default function Hero() {
               Sistem Pakar Diagnosa Penyakit pada Tanaman Padi
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Solusi cerdas untuk mendiagnosa penyakit tanaman padi Anda secara cepat dan akurat. 
-              Didukung oleh teknologi sistem pakar untuk hasil yang terpercaya.
+              Solusi cerdas untuk mendiagnosa penyakit tanaman padi Anda secara
+              cepat dan akurat. Didukung oleh teknologi sistem pakar untuk hasil
+              yang terpercaya.
             </p>
-            <Button 
-              href="#diagnosis" 
-              icon={Leaf}
-            >
+            <Button href="#diagnosis" icon={Leaf}>
               Mulai Diagnosa
             </Button>
           </div>
           <div className="md:w-1/2">
-            <img 
-              src="https://images.unsplash.com/photo-1595839095404-14e97c5fd60f?auto=format&fit=crop&q=80"
+            <img
+                src="/assets/bg.jpg"
               alt="Rice Field"
               className="rounded-lg shadow-xl"
             />

@@ -1,23 +1,23 @@
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import React from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactCard() {
   const contacts = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'support@sistemdiagnosapadi.com'
+      label: "Email",
+      value: "support@padiku.com",
     },
     {
       icon: Phone,
-      label: 'Telepon',
-      value: '+62 812-3456-7890'
+      label: "Telepon",
+      value: "+62 812-3456-7890",
     },
     {
       icon: MapPin,
-      label: 'Alamat',
-      value: 'Jl. Pertanian Sejahtera No. 45, Jakarta'
-    }
+      label: "Alamat",
+      value: "Jl. Bumi Manti II No. 45, Rajabasa, Bandar Lampung",
+    },
   ];
 
   return (

@@ -43,7 +43,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Sprout className={`w-8 h-8 ${isScrolled ? 'text-green-600' : 'text-white'}`} />
-            <span className="text-2xl font-bold">RiceDiagnose</span>
+            <span className="text-2xl font-bold">Padiku</span>
           </div>
 
           {/* Desktop Navigation */}

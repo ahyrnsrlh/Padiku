@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Sprout, Menu, X, Sun, Moon } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Sprout, Menu, X, Sun, Moon } from "lucide-react";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,21 +8,21 @@ export function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleTheme = () => {
     setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
+    document.documentElement.classList.toggle("dark");
   };
 
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg'
-          : 'bg-transparent'
+          ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -30,7 +30,7 @@ export function Navigation() {
           <div className="flex items-center space-x-3">
             <Sprout className="h-8 w-8 text-green-600" />
             <span className="font-bold text-xl text-gray-900 dark:text-white">
-              RiceDiagnose
+              Padiku
             </span>
           </div>
 
@@ -47,10 +47,7 @@ export function Navigation() {
             </button>
           </div>
 
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2"
-          >
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2">
             {isOpen ? (
               <X className="h-6 w-6 text-gray-600 dark:text-white" />
             ) : (
