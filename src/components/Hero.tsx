@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
           <div className="md:w-1/2">
             <img
-                src="/assets/bg.jpg"
+                src="/assets/bg.svg"
               alt="Rice Field"
               className="rounded-lg shadow-xl"
             />
