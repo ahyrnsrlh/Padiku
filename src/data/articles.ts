@@ -17,24 +17,8 @@ export const articles: Article[] = [
         <li>Semua barisan rumpun tanaman berada pada bagian pinggir yang memberikan efek tanaman pinggir</li>
         <li>Memudahkan pemeliharaan tanaman</li>
       </ul>
-
-      <h3>2. Penggunaan Bibit Unggul</h3>
-      <p>Pemilihan bibit yang tepat sangat penting untuk hasil yang optimal. Beberapa kriteria bibit unggul:</p>
-      <ul>
-        <li>Tahan terhadap hama dan penyakit</li>
-        <li>Umur panen lebih pendek</li>
-        <li>Produktivitas tinggi</li>
-      </ul>
-
-      <h3>3. Manajemen Air Modern</h3>
-      <p>Pengaturan air yang tepat sangat penting untuk pertumbuhan optimal tanaman padi. Beberapa teknik modern meliputi:</p>
-      <ul>
-        <li>Sistem irigasi tetes</li>
-        <li>Penggunaan sensor kelembaban tanah</li>
-        <li>Manajemen air berbasis IoT</li>
-      </ul>
     `,
-    image: "/src/assets/artikel2.svg",
+    image: "/artikel2.svg",
     date: "March 15, 2024",
     readTime: 8,
     category: "Cultivation",
@@ -48,33 +32,8 @@ export const articles: Article[] = [
     content: `
       <h2>Mengenal dan Mencegah Penyakit Blast pada Padi</h2>
       <p>Penyakit blast yang disebabkan oleh jamur Pyricularia oryzae merupakan salah satu penyakit paling serius yang mengancam produksi padi. Mari kita pelajari cara mencegah dan menanganinya.</p>
-
-      <h3>Gejala Penyakit Blast</h3>
-      <p>Beberapa gejala yang perlu diwaspadai:</p>
-      <ul>
-        <li>Bercak berbentuk belah ketupat pada daun</li>
-        <li>Bercak berwarna cokelat dengan tepi lebih gelap</li>
-        <li>Daun mengering dan mati</li>
-      </ul>
-
-      <h3>Strategi Pencegahan</h3>
-      <p>Beberapa langkah pencegahan yang dapat dilakukan:</p>
-      <ul>
-        <li>Penggunaan varietas tahan blast</li>
-        <li>Pengaturan jarak tanam yang tepat</li>
-        <li>Pemupukan berimbang</li>
-        <li>Sanitasi lahan yang baik</li>
-      </ul>
-
-      <h3>Pengendalian Terpadu</h3>
-      <p>Jika penyakit sudah muncul, lakukan pengendalian terpadu:</p>
-      <ul>
-        <li>Aplikasi fungisida yang tepat</li>
-        <li>Perbaikan drainase</li>
-        <li>Pengaturan pemupukan nitrogen</li>
-      </ul>
     `,
-    image: "/src/assets/artikel.svg",
+    image: "/artikel.svg",
     date: "March 12, 2024",
     readTime: 6,
     category: "Disease Prevention",
@@ -88,79 +47,23 @@ export const articles: Article[] = [
     content: `
       <h2>Panduan Lengkap Pemupukan Tanaman Padi</h2>
       <p>Pemupukan yang tepat merupakan kunci keberhasilan dalam budidaya padi. Mari kita pelajari cara pemupukan yang efektif dan efisien.</p>
-
-      <h3>Jenis-jenis Pupuk</h3>
-      <p>Beberapa jenis pupuk yang dibutuhkan tanaman padi:</p>
-      <ul>
-        <li>Pupuk Nitrogen (Urea)</li>
-        <li>Pupuk Fosfat (SP-36)</li>
-        <li>Pupuk Kalium (KCl)</li>
-        <li>Pupuk organik</li>
-      </ul>
-
-      <h3>Waktu Pemupukan yang Tepat</h3>
-      <p>Jadwal pemupukan yang direkomendasikan:</p>
-      <ul>
-        <li>Pemupukan dasar: saat pengolahan tanah</li>
-        <li>Pemupukan susulan 1: 7-10 hari setelah tanam</li>
-        <li>Pemupukan susulan 2: 25-30 hari setelah tanam</li>
-        <li>Pemupukan susulan 3: 40-45 hari setelah tanam</li>
-      </ul>
-
-      <h3>Dosis Pemupukan</h3>
-      <p>Dosis pupuk per hektar yang direkomendasikan:</p>
-      <ul>
-        <li>Urea: 250-300 kg</li>
-        <li>SP-36: 100-150 kg</li>
-        <li>KCl: 100 kg</li>
-        <li>Pupuk organik: 2-5 ton</li>
-      </ul>
     `,
-    image:
-      "/src/assets/artikel4.svg",
+    image: "/artikel4.svg",
     date: "March 10, 2024",
     readTime: 7,
     category: "Fertilization",
     tags: ["fertilizer", "nutrition", "soil health"],
   },
   {
-    id: "3",
+    id: "4",
     title: "Panduan Pengelolaan Tanaman Padi",
     excerpt:
-      "panduan lengkap pengelolaan tanaman padi, mulai dari persiapan lahan hingga panen.",
+      "Panduan lengkap pengelolaan tanaman padi, mulai dari persiapan lahan hingga panen.",
     content: `
-      <h2>Panduan Lengkap Pemupukan Tanaman Padi</h2>
-      <p>Pemupukan yang tepat merupakan kunci keberhasilan dalam budidaya padi. Mari kita pelajari cara pemupukan yang efektif dan efisien.</p>
-
-      <h3>Jenis-jenis Pupuk</h3>
-      <p>Beberapa jenis pupuk yang dibutuhkan tanaman padi:</p>
-      <ul>
-        <li>Pupuk Nitrogen (Urea)</li>
-        <li>Pupuk Fosfat (SP-36)</li>
-        <li>Pupuk Kalium (KCl)</li>
-        <li>Pupuk organik</li>
-      </ul>
-
-      <h3>Waktu Pemupukan yang Tepat</h3>
-      <p>Jadwal pemupukan yang direkomendasikan:</p>
-      <ul>
-        <li>Pemupukan dasar: saat pengolahan tanah</li>
-        <li>Pemupukan susulan 1: 7-10 hari setelah tanam</li>
-        <li>Pemupukan susulan 2: 25-30 hari setelah tanam</li>
-        <li>Pemupukan susulan 3: 40-45 hari setelah tanam</li>
-      </ul>
-
-      <h3>Dosis Pemupukan</h3>
-      <p>Dosis pupuk per hektar yang direkomendasikan:</p>
-      <ul>
-        <li>Urea: 250-300 kg</li>
-        <li>SP-36: 100-150 kg</li>
-        <li>KCl: 100 kg</li>
-        <li>Pupuk organik: 2-5 ton</li>
-      </ul>
+      <h2>Panduan Pengelolaan Tanaman Padi</h2>
+      <p>Langkah-langkah untuk pengelolaan tanaman padi dari awal hingga panen dengan teknik modern.</p>
     `,
-    image:
-      "/src/assets/artikel3.svg",
+    image: "/artikel3.svg",
     date: "March 10, 2024",
     readTime: 7,
     category: "Fertilization",

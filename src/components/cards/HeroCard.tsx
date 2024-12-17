@@ -25,7 +25,7 @@ export function HeroCard() {
       {/* Gambar Hero */}
       <div className="absolute right-0 bottom-0 z-10 group-hover:opacity-90 transition-opacity">
         <img
-          src="/src/assets/bg.svg"
+          src="/src/public/bg.svg"
           alt="Rice Field Background"
           className="w-96 h-96 object-cover"
         />
