@@ -10,12 +10,12 @@ export function StatsCard() {
     },
     {
       icon: Leaf,
-      value: "10",
+      value: "30+",
       label: "Jenis Penyakit",
     },
     {
       icon: CheckCircle,
-      value: "95%",
+      value: "100%",
       label: "Akurasi",
     },
     {
