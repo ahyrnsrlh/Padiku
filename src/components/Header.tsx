@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Sprout, Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Sprout, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,45 +10,49 @@ export default function Header() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Beranda' },
-    { href: '#features', label: 'Fitur' },
-    { href: '#about', label: 'Tentang Kami' },
-    { href: '#diagnosis', label: 'Diagnosa' },
-    { href: '#contact', label: 'Kontak' }
+    { href: "#home", label: "Beranda" },
+    { href: "#features", label: "Fitur" },
+    { href: "#about", label: "Tentang Kami" },
+    { href: "#diagnosis", label: "Diagnosa" },
+    { href: "#contact", label: "Kontak" },
   ];
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/90 backdrop-blur-sm shadow-lg text-green-800' 
-          : 'bg-transparent text-white'
+        isScrolled
+          ? "bg-white/90 backdrop-blur-sm shadow-lg text-green-800"
+          : "bg-transparent text-white"
       }`}
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Sprout className={`w-8 h-8 ${isScrolled ? 'text-green-600' : 'text-white'}`} />
+            <Sprout
+              className={`w-8 h-8 ${
+                isScrolled ? "text-green-600" : "text-white"
+              }`}
+            />
             <span className="text-2xl font-bold">Padiku</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {navLinks.map(link => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -57,7 +61,7 @@ export default function Header() {
                   handleNavClick(link.href);
                 }}
                 className={`hover:text-green-500 transition-colors ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
+                  isScrolled ? "text-gray-700" : "text-white"
                 }`}
               >
                 {link.label}
@@ -71,9 +75,17 @@ export default function Header() {
             className="md:hidden"
           >
             {isMobileMenuOpen ? (
-              <X className={`w-6 h-6 ${isScrolled ? 'text-green-600' : 'text-white'}`} />
+              <X
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-green-600" : "text-white"
+                }`}
+              />
             ) : (
-              <Menu className={`w-6 h-6 ${isScrolled ? 'text-green-600' : 'text-white'}`} />
+              <Menu
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-green-600" : "text-white"
+                }`}
+              />
             )}
           </button>
         </nav>
@@ -81,11 +93,11 @@ export default function Header() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden fixed inset-x-0 bg-white/95 backdrop-blur-sm shadow-lg transition-all duration-300 ${
-            isMobileMenuOpen ? 'top-20 opacity-100' : '-top-full opacity-0'
+            isMobileMenuOpen ? "top-20 opacity-100" : "-top-full opacity-0"
           }`}
         >
           <div className="py-4">
-            {navLinks.map(link => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}

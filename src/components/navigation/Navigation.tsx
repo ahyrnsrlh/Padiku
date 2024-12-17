@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Sprout, Menu, X, Sun, Moon } from "lucide-react";
+import { useDarkMode } from "../../hooks/useDarkMode";
+import { useScrollPosition } from "../../hooks/useScrollPosition";
 
 export function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const navigate = useNavigate();
+  const { isDark, toggleDarkMode } = useDarkMode();
+  const isScrolled = useScrollPosition();
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
-  };
 
   return (
     <nav
@@ -27,7 +20,10 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-3">
+          <div
+            className="flex items-center space-x-3 cursor-pointer"
+            onClick={() => navigate("/")}
+          >
             <Sprout className="h-8 w-8 text-green-600" />
             <span className="font-bold text-xl text-gray-900 dark:text-white">
               Padiku
@@ -36,7 +32,7 @@ export function Navigation() {
 
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={toggleTheme}
+              onClick={toggleDarkMode}
               className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               {isDark ? (

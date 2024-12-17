@@ -16,7 +16,7 @@ export function ContactCard() {
     {
       icon: MapPin,
       label: "Alamat",
-      value: "Jl. Bumi Manti II No. 45, Rajabasa, Bandar Lampung",
+      value: "Jl. Prof. Dr. Sumantri Brojonegoro No. 1 Bandar Lampung",
     },
   ];
 

@@ -21,12 +21,12 @@ export function Button({
   return (
     <button
       className={cn(
-        "inline-flex items-center px-6 py-3 rounded-full transition-colors",
+        "inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-colors",
         variant === 'primary' && "bg-green-600 text-white hover:bg-green-700",
         variant === 'secondary' && "bg-green-50 text-green-600 hover:bg-green-100",
-        variant === 'outline' && "border border-green-600 text-green-600 hover:bg-green-50",
+        variant === 'outline' && "border-2 border-green-600 text-green-600 hover:bg-green-50",
         disabled && "opacity-50 cursor-not-allowed",
-        fullWidth && "w-full justify-center",
+        fullWidth && "w-full",
         className
       )}
       disabled={disabled}
