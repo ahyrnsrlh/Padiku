@@ -8,6 +8,7 @@ Padiku adalah sebuah sistem pakar berbasis web yang dirancang untuk membantu pet
 <li>Diagnosa Cepat: Hasil diagnosa instan dengan tingkat akurasi tinggi hingga 100%.</ul>
 <li>Informasi Lengkap: Database komprehensif mengenai penyakit tanaman padi, gejala, dan penanganannya.</li>
 <li>Saran Ahli: Rekomendasi praktis dari para pakar pertanian untuk solusi terbaik.</li>
+<li>Cuaca: Menyediakan informasi cuaca terkini dan ramalan cuaca yang dapat mempengaruhi kesehatan tanaman padi.</li>
 <li>Artikel & Edukasi: Informasi lengkap seputar teknik budidaya modern dan panduan pertanian.</li>
 
 ## Live Preview
