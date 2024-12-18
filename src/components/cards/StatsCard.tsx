@@ -4,11 +4,6 @@ import { Users, Leaf, CheckCircle, Clock } from "lucide-react";
 export function StatsCard() {
   const stats = [
     {
-      icon: Users,
-      value: "1,000+",
-      label: "Pengguna Aktif",
-    },
-    {
       icon: Leaf,
       value: "30+",
       label: "Jenis Penyakit",
