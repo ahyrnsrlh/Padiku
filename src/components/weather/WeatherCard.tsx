@@ -65,7 +65,7 @@ export function WeatherCard() {
               <IconBox icon={Thermometer} />
               <div>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Temperature
+                  Suhu
                 </p>
                 <p className="font-semibold">
                   {formatTemperature(currentWeather.main.feels_like)}°C
