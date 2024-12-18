@@ -13,8 +13,8 @@ export function useWeather() {
       try {
         setIsLoading(true);
         // Default coordinates for Jakarta, Indonesia
-        const lat = -6.2088;
-        const lon = 106.8456;
+        const lat = -5.429753;
+        const lon = 105.262272;
         
         const [weather, forecastData] = await Promise.all([
           fetchWeatherData(lat, lon),

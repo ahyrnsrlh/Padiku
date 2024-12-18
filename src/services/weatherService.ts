@@ -22,7 +22,7 @@ const mockWeatherData: WeatherData = {
     deg: 120
   },
   dt: Date.now() / 1000,
-  name: "Jakarta"
+  name: "Bandar Lampung"
 };
 
 const mockForecastData: ForecastData[] = Array(5).fill(null).map((_, i) => ({
