@@ -5,7 +5,7 @@
 Padiku adalah sebuah sistem pakar berbasis web yang dirancang untuk membantu petani mendiagnosa penyakit pada tanaman padi secara cepat dan akurat menggunakan metode Forward Chaining. Dengan solusi cerdas ini, petani dapat mengidentifikasi gejala penyakit, mendapatkan informasi detail, serta menerima rekomendasi penanganan dari para ahli pertanian.
 
 <h2>Fitur Utama 🚀</h2>
-<li>Diagnosa Cepat: Hasil diagnosa instan dengan tingkat akurasi tinggi hingga 95%.</ul>
+<li>Diagnosa Cepat: Hasil diagnosa instan dengan tingkat akurasi tinggi hingga 100%.</ul>
 <li>Informasi Lengkap: Database komprehensif mengenai penyakit tanaman padi, gejala, dan penanganannya.</li>
 <li>Saran Ahli: Rekomendasi praktis dari para pakar pertanian untuk solusi terbaik.</li>
 <li>Artikel & Edukasi: Informasi lengkap seputar teknik budidaya modern dan panduan pertanian.</li>
