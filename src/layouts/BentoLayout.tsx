@@ -7,6 +7,7 @@ import { AboutCard } from '../components/cards/AboutCard';
 import { ContactCard } from '../components/cards/ContactCard';
 import { WeatherCard } from '../components/weather/WeatherCard';
 import { EducationSection } from '../components/articles/EducationSection';
+import { ChatSection } from '../components/chat/ChatSection';
 
 export function BentoLayout() {
   return (
@@ -28,11 +29,18 @@ export function BentoLayout() {
             <DiagnosisCard />
           </div>
 
+        
+
           {/* Education Section - Spans full width */}
           <div className="md:col-span-2 lg:col-span-3">
             <EducationSection />
           </div>
 
+  {/* AI Chat Section - Spans full width */}
+          <div className="md:col-span-2 lg:col-span-3">
+            <ChatSection />
+          </div>
+          
           {/* Features Section */}
           <div className="md:col-span-1">
             <FeaturesCard />
