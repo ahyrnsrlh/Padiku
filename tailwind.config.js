@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import typography from "@tailwindcss/typography";
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -10,51 +11,51 @@ export default {
         foreground: "hsl(var(--foreground))",
       },
       borderRadius: {
-        '3xl': '1.5rem',
+        "3xl": "1.5rem",
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme("colors.gray.700"),
             h1: {
-              color: theme('colors.gray.900'),
+              color: theme("colors.gray.900"),
             },
             h2: {
-              color: theme('colors.gray.900'),
+              color: theme("colors.gray.900"),
             },
             h3: {
-              color: theme('colors.gray.900'),
+              color: theme("colors.gray.900"),
             },
             strong: {
-              color: theme('colors.gray.900'),
+              color: theme("colors.gray.900"),
             },
             a: {
-              color: theme('colors.green.600'),
-              '&:hover': {
-                color: theme('colors.green.700'),
+              color: theme("colors.green.600"),
+              "&:hover": {
+                color: theme("colors.green.700"),
               },
             },
           },
         },
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme("colors.gray.300"),
             h1: {
-              color: theme('colors.white'),
+              color: theme("colors.white"),
             },
             h2: {
-              color: theme('colors.white'),
+              color: theme("colors.white"),
             },
             h3: {
-              color: theme('colors.white'),
+              color: theme("colors.white"),
             },
             strong: {
-              color: theme('colors.white'),
+              color: theme("colors.white"),
             },
             a: {
-              color: theme('colors.green.400'),
-              '&:hover': {
-                color: theme('colors.green.300'),
+              color: theme("colors.green.400"),
+              "&:hover": {
+                color: theme("colors.green.300"),
               },
             },
           },
@@ -62,7 +63,5 @@ export default {
       }),
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [typography],
 };

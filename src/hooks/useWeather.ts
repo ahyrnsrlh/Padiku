@@ -12,7 +12,7 @@ export function useWeather() {
     const loadWeatherData = async () => {
       try {
         setIsLoading(true);
-        // Default coordinates for Jakarta, Indonesia
+        // Default coordinates for Bandar Lampung, Indonesia
         const lat = -5.429753;
         const lon = 105.262272;
         
