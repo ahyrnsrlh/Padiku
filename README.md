@@ -10,6 +10,7 @@ Padiku adalah sebuah sistem pakar berbasis web yang dirancang untuk membantu pet
 <li>Saran Ahli: Rekomendasi praktis dari para pakar pertanian untuk solusi terbaik.</li>
 <li>Cuaca: Informasi cuaca terkini dan ramalan cuaca yang dapat mempengaruhi kesehatan tanaman padi.</li>
 <li>Artikel & Edukasi: Informasi lengkap seputar teknik budidaya modern dan panduan pertanian.</li>
+<li>TanyaPadiku: Fitur AI Asisten yang dirancang untuk memberikan solusi cepat dan akurat terkait masalah penyakit tanaman padi.</li>
 
 ## Live Preview
 [padiku.netlify.app](https://padiku.netlify.app/)
