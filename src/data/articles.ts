@@ -123,45 +123,36 @@ export const articles: Article[] = [
     tags: ["fertilizer", "nutrition", "soil health"],
   },
   {
-    id: "3",
-    title: "Panduan Pengelolaan Tanaman Padi",
+    id: "4",
+    title: "Teknik Irigasi untuk Tanaman Padi",
     excerpt:
-      "panduan lengkap pengelolaan tanaman padi, mulai dari persiapan lahan hingga panen.",
+      "Panduan lengkap tentang teknik irigasi yang efektif untuk meningkatkan hasil panen padi.",
     content: `
-      <h2>Panduan Lengkap Pemupukan Tanaman Padi</h2>
-      <p>Pemupukan yang tepat merupakan kunci keberhasilan dalam budidaya padi. Mari kita pelajari cara pemupukan yang efektif dan efisien.</p>
-
-      <h3>Jenis-jenis Pupuk</h3>
-      <p>Beberapa jenis pupuk yang dibutuhkan tanaman padi:</p>
+      <h2>Teknik Irigasi untuk Tanaman Padi</h2>
+      <p>Irigasi yang baik sangat penting untuk pertumbuhan tanaman padi. Artikel ini membahas berbagai teknik irigasi yang dapat diterapkan.</p>
+      <h3>1. Irigasi Permukaan</h3>
+      <p>Teknik irigasi yang paling umum digunakan, di mana air dialirkan ke lahan melalui saluran terbuka. Kelebihan dan kekurangan:</p>
       <ul>
-        <li>Pupuk Nitrogen (Urea)</li>
-        <li>Pupuk Fosfat (SP-36)</li>
-        <li>Pupuk Kalium (KCl)</li>
-        <li>Pupuk organik</li>
+        <li>Kelebihan: Biaya rendah dan mudah diterapkan.</li>
+        <li>Kekurangan: Penggunaan air yang tidak efisien dan risiko erosi tanah.</li>
       </ul>
-
-      <h3>Waktu Pemupukan yang Tepat</h3>
-      <p>Jadwal pemupukan yang direkomendasikan:</p>
+      <h3>2. Irigasi Tetes</h3>
+      <p>Teknik irigasi yang lebih efisien, di mana air diberikan langsung ke akar tanaman. Kelebihan dan kekurangan:</p>
       <ul>
-        <li>Pemupukan dasar: saat pengolahan tanah</li>
-        <li>Pemupukan susulan 1: 7-10 hari setelah tanam</li>
-        <li>Pemupukan susulan 2: 25-30 hari setelah tanam</li>
-        <li>Pemupukan susulan 3: 40-45 hari setelah tanam</li>
+        <li>Kelebihan: Menghemat air dan meningkatkan hasil panen.</li>
+        <li>Kekurangan: Biaya awal yang tinggi dan memerlukan pemeliharaan yang baik.</li>
       </ul>
-
-      <h3>Dosis Pemupukan</h3>
-      <p>Dosis pupuk per hektar yang direkomendasikan:</p>
+      <h3>3. Irigasi Berbasis Teknologi</h3>
+      <p>Penggunaan teknologi modern seperti sensor kelembaban tanah dan sistem otomatis untuk mengatur irigasi. Kelebihan:</p>
       <ul>
-        <li>Urea: 250-300 kg</li>
-        <li>SP-36: 100-150 kg</li>
-        <li>KCl: 100 kg</li>
-        <li>Pupuk organik: 2-5 ton</li>
+        <li>Meningkatkan efisiensi penggunaan air.</li>
+        <li>Memudahkan pengelolaan irigasi.</li>
       </ul>
     `,
     image: "/artikel3.svg",
-    date: "March 10, 2024",
-    readTime: 7,
-    category: "Fertilization",
-    tags: ["fertilizer", "nutrition", "soil health"],
+    date: "March 25, 2024",
+    readTime: 5,
+    category: "Irrigation",
+    tags: ["irrigation", "rice cultivation", "agriculture"],
   },
 ];
