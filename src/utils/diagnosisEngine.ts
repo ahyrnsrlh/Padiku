@@ -4,13 +4,13 @@ import { diseases } from '../data/diseases';
 export function diagnose(selectedSymptoms: string[]): DiagnosisResult | null {
   if (!selectedSymptoms.length) return null;
 
-  // Calculate confidence for each disease
+  // Hitung tingkat kepercayaan untuk setiap penyakit
   const results = diseases.map(disease => {
     const matchingSymptoms = disease.symptoms.filter(symptom => 
       selectedSymptoms.includes(symptom)
     );
 
-    // Calculate confidence based on matching symptoms
+    // Hitung tingkat kepercayaan berdasarkan gejala yang cocok
     const confidence = Math.round(
       (matchingSymptoms.length / disease.symptoms.length) * 100
     );
@@ -21,11 +21,11 @@ export function diagnose(selectedSymptoms: string[]): DiagnosisResult | null {
     };
   });
 
-  // Sort by confidence and get the highest match
+  // Urutkan berdasarkan tingkat kepercayaan dan ambil yang paling cocok
   const sortedResults = results.sort((a, b) => b.confidence - a.confidence);
   const bestMatch = sortedResults[0];
 
-  // Only return results with confidence > 0
+  // Hanya kembalikan hasil dengan tingkat kepercayaan > 0
   if (bestMatch.confidence > 0) {
     return {
       disease: bestMatch,
